@@ -11,3 +11,25 @@
     --quart-color: #d1a054;
     --hoover-color: #e2e2e2;
   }
+
+  header {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  header > a > img {
+    max-width: 150px;
+    padding: 30px;
+  }
+
+  header > div {
+    color: var(--quart-color);
+  }
+
+ h1 {
+    border-bottom: solid red 3px;
+ }
