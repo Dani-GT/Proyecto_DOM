@@ -48,3 +48,39 @@
     font-size: x-large;
     font-weight: 600;
  }
+main {
+    display: flex;
+}
+.barra {
+    width: 100%;
+    height: 60px;
+    background-color: var(--terc-color);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: start;
+}
+
+.buscador {
+    padding: 20px;
+}
+
+.buscador > input {
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 250px;
+    padding: 0 20px;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid red;
+}
+ ::placeholder {
+    color: grey;
+ }
+
+ .barra > img {
+    width: 30px;
+
+ }
