@@ -67,4 +67,37 @@ const products = [
     }
   ];
 
+  const news = [
+     "https://www.hypertrophynutrition.com/img/cms/banners/BANNER-PRESENTACION-N1-500G.jpg",
+      "https://www.hypertrophynutrition.com/img/cms/20240104234916/banner4.jpg",
+     "https://www.hypertrophynutrition.com/img/cms/20240104234915/banner2.jpg",
+     "https://www.pontemasfuerte.com/media/banners/2935.jpg?1725213312"
+  ];
+
+
   
+
+let currentIndex = 0; // Índice de la imagen actual
+
+// Crear el elemento img y añadirlo al contenedor
+const container = document.getElementById('novedades');
+const imgElement = document.createElement('img');
+imgElement.id = 'novedades';
+imgElement.src = news[currentIndex]; // Establecer la imagen inicial
+container.appendChild(imgElement);
+
+function changeImage() {
+    // Actualizar el índice de la imagen
+    currentIndex = (currentIndex + 1) % news.length; // Volver al inicio si es necesario
+
+    // Aplicar transición de opacidad para suavizar el cambio de imagen
+    imgElement.style.opacity = 0; // Desvanecer la imagen actual
+
+    setTimeout(() => {
+        // Cambiar la imagen después de la transición
+        imgElement.src = news[currentIndex];
+        imgElement.style.opacity = 1; // Mostrar la nueva imagen con suavidad
+    }, 1000); // Tiempo para que la imagen se desvanezca (1 segundo)
+}
+setInterval(changeImage, 5000);
+

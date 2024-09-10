@@ -49,14 +49,16 @@
     font-weight: 600;
  }
 main {
-    display: flex;
+    display: grid;
 }
+
+
 .barra {
     width: 100%;
-    height: 60px;
+    height: 70px;
     background-color: var(--terc-color);
     display: flex;
-    padding: 20px;
+    padding: 5px;
     align-items: center;
     justify-content: start;
 }
@@ -69,18 +71,75 @@ main {
     outline: none;
     box-sizing: border-box;
     height: 40px;
-    width: 250px;
+    width: 350px;
     padding: 0 20px;
     color: black;
     border-radius: 50px;
     font-size: 20px;
     border: 1px solid red;
 }
+
  ::placeholder {
     color: grey;
  }
 
- .barra > img {
+ .barra > a > img  {
     width: 30px;
-
+    margin-left: 4px;  
  }
+
+ .barra > a {
+   justify-content: center;
+   padding: 8px;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ a p {
+    color: black;
+ }
+
+ .iconos {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 10px;
+ }
+
+ .iconos a {
+    padding: 10px;
+ }
+
+ .barra a:hover {
+    background-color: #d1a054;
+    padding: 10px;
+    transition: 0.5s ease;
+ }
+
+ .iconos a img {
+    width: 30px;
+ }
+
+ .iconos a li {
+    color: black;
+ }
+
+ #novedades {
+    width: 100%; /* Ancho del contenedor de las imágenes */
+    height: 400px; /* Altura del contenedor de las imágenes */
+    overflow: hidden;
+    position: relative;
+}
+
+#novedades img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    transition: opacity 1s ease-in-out; /* Transición suave */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
