@@ -74,9 +74,6 @@ const products = [
      "https://www.pontemasfuerte.com/media/banners/2935.jpg?1725213312"
   ];
 
-
-  
-
 let currentIndex = 0; // Índice de la imagen actual
 
 // Crear el elemento img y añadirlo al contenedor
