@@ -2,7 +2,8 @@
      "https://www.hypertrophynutrition.com/img/cms/banners/BANNER-PRESENTACION-N1-500G.jpg",
       "https://www.hypertrophynutrition.com/img/cms/20240104234916/banner4.jpg",
      "https://www.hypertrophynutrition.com/img/cms/20240104234915/banner2.jpg",
-     "https://www.pontemasfuerte.com/media/banners/2935.jpg?1725213312"
+     "https://www.pontemasfuerte.com/media/banners/2935.jpg?1725213312",
+     "https://www.pontemasfuerte.com/media/banners/2942.png?1725622427"
   ];
 
 let currentIndex = 0; // Índice de la imagen actual
@@ -114,3 +115,4 @@ for (const producto of products) {
   article.appendChild(p);
   productos.appendChild(article);
 }
+
