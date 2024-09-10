@@ -98,3 +98,19 @@ function changeImage() {
 }
 setInterval(changeImage, 5000);
 
+const productos = document.querySelector("#productos")
+
+for (const producto of products) {
+  const article = document.createElement("article");
+  const h3 = document.createElement("h3");
+  h3.textContent = producto.nombre;
+  article.appendChild(h3);
+  const p = document.createElement("p");
+  p.textContent = producto.nombre + " " + producto.precio;
+  article.appendChild(p);
+  const image = document.createElement("img");
+  image.src = producto.urlImagen;
+  image.alt = producto.nombre;
+  article.appendChild(image);
+  productos.appendChild(article);
+}
