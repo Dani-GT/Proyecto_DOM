@@ -11,7 +11,9 @@
     --quart-color: #d1a054;
     --hoover-color: #e2e2e2;
   }
-
+ body {
+   min-height: 100vh;
+ }
   header {
     background-color: var(--secondary-color);
     width: 100%;
