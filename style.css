@@ -198,5 +198,20 @@ body footer li {
 body footer h3 {
    padding-left: 5px;
    font-size: 23px;
-   padding-bottom: 5px;
+   padding-bottom: 10px;
+}
+
+.siguenos {
+   padding: 15px;
+}
+.social-icon {
+   color: var(--terc-color);
+   font-size: 30px; 
+   margin: 0 15px;
+   text-decoration: none;
+   transition: color 0.3s ease; 
+}
+
+.social-icon:hover {
+   color: white;
 }
