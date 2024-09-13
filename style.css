@@ -11,10 +11,12 @@
     --quart-color: #d1a054;
     --hoover-color: #e2e2e2;
   }
+
  body {
    min-height: 100vh;
    width: 100%;
-   
+   display: flex;
+   flex-direction: column;
  }
 
  ul{
@@ -155,7 +157,7 @@ main {
 
 #productos {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
    gap: 40px;
    padding: 80px;
 }
@@ -263,7 +265,7 @@ body footer h3 {
    color: white;
    justify-content: center;
    align-items: center;
-   position: absolute;
+   
 }
 
 @media (max-width: 715px) {
