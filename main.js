@@ -97,7 +97,32 @@ const products = [
     vendedor: "Biotech USA",
     urlImagen: "https://www.pontemasfuerte.com/media/products/2449/casein-zero-1590408940.jpg?1664794358",
     precio: 38.90
-  }
+  },
+  {
+    nombre: "BCAA Pro Aminoácidos Esenciales - 90 cápsulas",
+    vendedor: "Invictus",
+    urlImagen: "https://www.hypertrophynutrition.com/83-medium_default/bcaa-pro-aminoacidos-esenciales-90-capsulas.jpg",
+    precio: 11.00
+  },
+  {
+    nombre: "Curcumin Cursol + Bioperine Cúrcuma - 60 Cápsulas",
+    vendedor: "Natural Healtg",
+    urlImagen: "https://www.hypertrophynutrition.com/110-medium_default/curcumin-cursol-bioperine-curcuma-60-capsulas.jpg",
+    precio: 25.50
+  },
+  {
+    nombre: "Prolight Original, Crema de Avellanas 250gr",
+    vendedor: "Menu Fitness",
+    urlImagen: "https://www.hypertrophynutrition.com/111-medium_default/prolight-original-crema-de-avellanas-250gr.jpg",
+    precio: 5.53
+  },
+  {
+    nombre: "ISACT CFM Isolate, Proteína Isolate 1kg",
+    vendedor: "Hypertrophy",
+    urlImagen: "https://www.hypertrophynutrition.com/115-medium_default/isact-cfm-isolate-proteina-isolate-1kg.jpg",
+    precio: 37.00
+  },
+
 ];
 
 const productos = document.querySelector("#productos")
